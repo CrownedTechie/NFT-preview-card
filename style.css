@@ -45,10 +45,6 @@ main {
     border-radius: .7em;
 }
 
-.view {
-    border-radius: 12px;
-}
-
 .equilibrium {
     width: 100%;
     border-radius: 8px;
@@ -121,13 +117,16 @@ hr {
     background-image: url('./images/icon-view.svg');
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
-    overflow: hidden;
     cursor: pointer;
+    border-radius: 8px;
+}
+
+.view {
+     display: flex;
 }
 
  .equilibrium:hover {
-    opacity: 0.2;
+    opacity: 0.22;
 }
   
 .container h2:hover, .name:hover {
@@ -135,7 +134,7 @@ hr {
     color: var(--Cyan);
 }
 
-        /* MEDIA QUERY */
+        /* MEDIA QUERY DESIGN */
 @media screen and (min-width:900px) {
     main {
         padding-top: 5em;
