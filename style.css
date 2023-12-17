@@ -50,7 +50,7 @@ main {
     border-radius: 8px;
 }
 
-.container h2 {
+.container h1 {
     color: var(--White);
     font-size: 1.5rem;
     font-weight: var(--semibold);
@@ -129,7 +129,7 @@ hr {
     opacity: 0.22;
 }
   
-.container h2:hover, .name:hover {
+.container h1:hover, .name:hover {
     cursor: pointer;
     color: var(--Cyan);
 }
