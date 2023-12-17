@@ -1,0 +1,152 @@
+:root {
+     /* Primary */
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+    --VerydarkblueMain: hsl(217, 54%, 11%); /*main BG*/
+    --VerydarkblueCard: hsl(216, 50%, 16%); /*card BG*/
+    --VerydarkblueLine: hsl(215, 32%, 27%); /*line*/
+    --White: hsl(0, 0%, 100%);
+
+    /* FONTS */
+    --outfit:'Outfit', sans-serif;;
+    --light: 300;
+    --regular: 400;
+    --semibold: 600;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-size: 18px;
+    font-family: var(--outfit);
+    background-color: var(--VerydarkblueMain);
+}
+
+img *{
+    max-width: 100%;
+}
+
+main {
+    padding: 3em 0;
+}
+
+.container {
+    width: 90%;
+    background-color: var(--VerydarkblueCard);
+    margin: 0 auto;
+    padding: 1.2em;
+    border-radius: .7em;
+}
+
+.view {
+    border-radius: 12px;
+}
+
+.equilibrium {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.container h2 {
+    color: var(--White);
+    font-size: 1.5rem;
+    font-weight: var(--semibold);
+}
+
+.container p, .time-left, .owner {
+    color: var(--Softblue);
+    font-size: 1.15rem;
+    line-height: 1.5;
+    font-weight: var(--light);
+}
+
+.crypto, .owner {
+    display: flex;
+    align-items: center;
+}
+
+.owner img {
+    width: 35px; height: 35px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+
+.crypto {
+    justify-content: space-between;
+}
+
+.currency, .time-left {
+    display: flex;
+    align-items: center;
+    gap: .3em;
+}
+
+.currency {
+    color: var(--Cyan);
+    font-size: 1.15rem;
+    font-weight: var(--semibold);
+}
+
+hr {
+    border-color: var(--VerydarkblueLine);
+}
+
+.owner {
+    gap: 1em;
+}
+
+.name {
+    color: var(--White);
+    font-weight: var(--regular);
+}
+
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
+
+        /* ACTIVE STATES DESIGN */
+.view:hover {
+    background: var(--Cyan);
+    background-image: url('./images/icon-view.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+ .equilibrium:hover {
+    opacity: 0.2;
+}
+  
+.container h2:hover, .name:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+        /* MEDIA QUERY */
+@media screen and (min-width:900px) {
+    main {
+        padding-top: 3.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .container {
+        max-width: 340px;
+        width: 30%;
+       
+    }
+}
